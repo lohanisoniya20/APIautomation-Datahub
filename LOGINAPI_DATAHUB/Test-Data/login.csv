@@ -1,0 +1,10 @@
+S.NO,TESTCASE_ID,TESTCASE_TYPE,email,password,EXPECTED_RESULT
+1,TC_1_valid_login,Positive,soniyaqasuperadmin@gmail.com,Soniyaqasuperadmin@123,Success
+2,TC_2_invalid_email,Negative,test@abc.com,Soniyaqasuperadmin@123,Invalid Login Credentials.
+3,TC_3_invalid_password,Negative,soniyaqasuperadmin@gmail.com,hdhddsjd,Invalid Login Credentials.
+4,TC_4_email_empty,Negative,,Soniyaqasuperadmin@123, Email cannot be empty
+5,TC_5_sql_injection_on_both_payload,Negative,1=1,1=1,Invalid Login Credentials.
+6,TC_6_both_username_and_password_incorrect,Negative,qqqq,qqqqq,Invalid Login Credentials.
+7,TC_7_missing_password,Negative,soniyaqasuperadmin@gmail.com,,Password is required
+8,TC_8_null_password,Negative,soniyaqasuperadmin@gmail.com,null,Password cannot be null
+9,TC_8_null_password,Negative,null,Soniyaqasuperadmin@123,Email cannot be null
