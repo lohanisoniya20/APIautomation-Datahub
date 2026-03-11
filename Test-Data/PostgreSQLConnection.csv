@@ -1,0 +1,7 @@
+S.NO,TESTCASE_ID,TESTCASE_TYPE,Scenario Description,EXPECTED_RESULT
+1,TC_PG_01,Positive,Valid credentials and host,Success
+2,TC_PG_02,Negative,"Incorrect Port (e.g., 8080)",Connection Failed
+3,TC_PG_03,Negative,Invalid Host/IP address,Timeout/Not Found
+4,TC_PG_04,Negative,Wrong Username,Authentication Failed
+5,TC_PG_05,Negative,Incorrect Password,Authentication Failed
+6,TC_PG_06,Negative,Non-existent Database Name,Database Not Found
